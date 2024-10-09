@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QGame - The Least Successful Browser Game in the Universe!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer" class="main">
+        <div id="big">
+            <noscript>
+                <h2>Where js go???</h2>
+                <h3>it not here...</h3>
+                <h3>pls js or no game:(</h3>
+                <p>
+                    <strong>Objective:</strong><br>
+                    • Enable Javascript <br>
+                    • Reload the site <br>
+                    <strong>Controls:</strong><br>
+                    • click around <br>
+                    <strong>Bugs:</strong><br>
+                    • Game requires javascript to run<br>
+                </p>
+            </noscript>
+            <script>
+                document.getElementById('big').innerHTML += `<button onclick="startGame()"><h3>Start Game</h3></button>`;
+            </script>
+            
+        </div>
+    </div>
+    <div id="data">
+        
+    </div>
+</body>
+<script type="module" src="game.js"></script>
+
+
