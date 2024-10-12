@@ -128,4 +128,9 @@ Plan:
 ---------------------------------------------------------------------------------------------------------------------
 */
 
+import * as Database from './database.js';
+
+Database.store('testing', '0', 'Hello world!');
+console.log(await Database.retrieve('testing', '0'));
+
 console.error('ERROR: The operation completed successfully.');

@@ -8,32 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="gameContainer" class="main">
-        <div id="big">
-            <noscript>
-                <h2>Where js go???</h2>
-                <h3>it not here...</h3>
-                <h3>pls js or no game:(</h3>
-                <p>
-                    <strong>Objective:</strong><br>
-                    • Enable Javascript <br>
-                    • Reload the site <br>
-                    <strong>Controls:</strong><br>
-                    • click around <br>
-                    <strong>Bugs:</strong><br>
-                    • Game requires javascript to run<br>
-                </p>
-            </noscript>
-            <script>
-                document.getElementById('big').innerHTML += `<button onclick="startGame()"><h3>Start Game</h3></button>`;
-            </script>
-            
-        </div>
+    <div id="main" class="main">
+        <noscript>
+            <h2>Where js go???</h2>
+            <h3>it not here...</h3>
+            <p>
+                <strong>Objectives:</strong><br>
+                • Enable Javascript <br>
+                • Reload the site <br>
+                <strong>Controls:</strong><br>
+                • click around <br>
+                <strong>Bugs:</strong><br>
+                • Game requires javascript to run<br>
+            </p>
+        </noscript>
+        <script>
+            document.getElementById('main').innerHTML += `<button onclick="startGame()"><h3>Start Game</h3></button>`;
+        </script>
     </div>
-    <div id="data">
-        
-    </div>
+    <script type="module" src="game.js"></script>
 </body>
-<script type="module" src="game.js"></script>
+
 
 
